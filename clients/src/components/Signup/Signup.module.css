@@ -1,0 +1,122 @@
+.signup_container {
+  /* font-family: "Poppins", sans-serif; */
+  width: 45%;
+  border: 1px solid #ccc;
+  background-color: white;
+  border-radius: 5px;
+  height: auto;
+  padding: 15px 30px 25px;
+  margin-top: 40px;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif !important;
+}
+.signup_container form {
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif !important;
+}
+
+div {
+  margin-bottom: 15px;
+}
+
+.paragrap {
+  margin-left: 40px;
+}
+
+.paragrap a {
+  color: #fe8402;
+}
+
+input {
+  width: 100%;
+  padding: 17px;
+  border: 0.5px solid #ddd;
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 3px solid #fe8402;
+}
+
+.inputfirst {
+  display: flex;
+}
+
+.lastName {
+  margin-left: 15px;
+}
+
+.error {
+  color: red;
+  font-size: 0.9em;
+}
+
+button {
+  padding: 10px;
+  background-color: #0b5ed7;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+  color: #fff;
+}
+
+button:hover {
+  background-color: rgb(30, 80, 189);
+  /* background-color: rgb(0,0,255); */
+}
+
+.login_link {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 25px;
+  font-family: "Poppins", sans-serif;
+}
+
+.login_link a {
+  color: #fe8402;
+  text-decoration: none;
+}
+
+.login_link a:hover {
+  text-decoration: none;
+}
+
+.inputfirst {
+  display: flex;
+  padding: 0 17px 0 2px;
+  margin: auto;
+  /* background-color: red; */
+}
+
+.password_field {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.toggle_password {
+  position: absolute;
+  right: 10px;
+  background: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.toggle_password:hover {
+  background: none;
+}
+
+@media screen and (max-width: 760px) {
+  .signup_container {
+    width: 100%;
+  }
+}

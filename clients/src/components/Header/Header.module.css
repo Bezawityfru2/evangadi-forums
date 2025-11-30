@@ -1,0 +1,114 @@
+.header {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.075) 0px 2px 4px 0px;
+  height: 11vh;
+  font-size: 26px;
+  padding: 20px 40px;
+  /* width: 80%; */
+  margin: 0 auto;
+  position: fixed;
+  z-index: 999;
+  background-color: #fff;
+  top: 0;
+}
+
+/* Flex container for nav links and sign-in button */
+.header__right {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 30vw;
+}
+
+/* Logo */
+.header__logo img {
+  padding: 0 40px;
+  width: 80%;
+  /* Adjust based on your design */
+}
+
+.header__nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #555;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.header__nav a:hover {
+  color: #fe8402;
+}
+
+/* Sign-in button */
+.header__signin {
+  background-color: #4a7aff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 10px;
+  cursor: pointer;
+  font-size: 15px;
+  width: 40%;
+}
+
+.header__signin:hover {
+  background-color: orange;
+}
+
+.header__menu_icon {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+/* Sidebar (for mobile) */
+.header__sidebar {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 300px;
+  background-color: #fff;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+
+.header__sidebar a {
+  display: block;
+  margin: 10px 0;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.header__sidebar button {
+  margin-top: 10px;
+}
+
+.header__close_icon {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .header__right {
+    display: none;
+  }
+
+  .header__menu_icon {
+    display: block;
+  }
+
+  .header__sidebar {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,99 @@
+.outer_about_wrapper {
+  width: 45%;
+  margin-left: 40px;
+  padding: 40px 20px; /* Replaced invalid padding-left: -20px */
+  z-index: 1; /* Ensure section is above background elements */
+  height: auto;
+  box-sizing: border-box;
+}
+
+.outer_about_wrapper p,
+h1 {
+  font-family: "Poppins", sans-serif !important;
+}
+
+.about_container {
+  width: 100%;
+}
+
+.about h3 {
+  color: #fe8302;
+}
+
+.about_container h1 {
+  font-weight: 510;
+  font-size: 2.375rem; /* 38px */
+  background-image: linear-gradient(to right, rgb(253, 83, 16), rgb(0, 0, 0));
+  background-clip: text;
+  color: transparent;
+  padding-bottom: 10px;
+}
+
+.about__detail p {
+  text-align: justify;
+  line-height: 1.5;
+  color: #374373;
+  padding-bottom: 10px;
+}
+
+.about_title {
+  color: #fe8302 !important;
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+}
+
+.about_btn {
+  display: inline-block; /* Ensure width and height are respected */
+  margin: 20px 0; /* Center with auto margin */
+  padding: 12px 24px; /* Slightly larger for better touch */
+  width: auto; /* Remove fixed width for flexibility */
+  min-width: 175px; /* Maintain minimum size */
+  height: auto; /* Remove fixed height */
+  color: #fff;
+  background-color: #fe8302;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none; /* Ensure no underline from Link */
+  cursor: pointer; /* Indicate clickability */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+.about_btn:hover {
+  background-color: #e67400; /* Darker orange for hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+.about_btn:active {
+  transform: translateY(0); /* Reset on click */
+}
+
+.about_btn:focus {
+  outline: 2px solid #374373; /* Accessible focus state */
+  outline-offset: 2px;
+}
+
+/* Responsive design */
+@media screen and (max-width: 760px) {
+  .outer_about_wrapper {
+    width: 90%; /* Slightly less than 100% for padding */
+    margin: 0 auto; /* Center on mobile */
+    padding: 20px 10px;
+  }
+
+  .about_container h1 {
+    font-size: 1.75rem; /* Smaller for mobile */
+  }
+
+  .about__detail p {
+    font-size: 0.9rem;
+  }
+
+  .about_btn {
+    min-width: 100%; /* Full-width for easier tapping */
+    padding: 10px 20px;
+    font-size: 0.95rem;
+  }
+}

@@ -1,0 +1,42 @@
+.four04_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.error_content {
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.error_code {
+  font-size: 120px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.error_message {
+  font-size: 20px;
+  margin: 20px 0;
+  color: #6c757d;
+}
+
+.home_link {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.home_link:hover {
+  background-color: #0056b3;
+}
